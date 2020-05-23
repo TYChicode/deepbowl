@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>遺光計畫</title>
+  <!-- Bootstrap -->
+  <link href="../css/home.css" rel="stylesheet">
+  <link href="../css/coremain.css" rel="stylesheet" />
+  <link href="../css/daygridmain.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <script src="../js/coremain.js"></script>
+  <script src="../js/daygridmain.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var calendarEl = document.getElementById('calendar');
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        plugins: ['dayGrid']
+      });
+      calendar.render();
+    });
+  </script>
+</head>
+
+<style>
+  h3 {
+    font-family: Microsoft JhengHei;
+  }
+</style>
+
+<body style="font-family: Microsoft JhengHei; font-size: 17px;">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="../html/Home.html" style="font-size: 25px;">遺光計畫</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span
+        class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"> <a class="nav-link" href="../html/Festival.html">祭典介紹<span
+              class="sr-only">(current)</span></a> </li>
+        <li class="nav-item"> <a class="nav-link" href="../html/SingUp.html">活動報名</a> </li>
+        <li class="nav-item active"> <a class="nav-link" href="../html/group.html">族群介紹</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="../html/map.html">旅遊地圖</a> </li>
+      </ul>
+    </div>
+  </nav>
+  <header>
+    <div id="demo" class="carousel slide" data-ride="carousel" style="width: 600px; margin: auto;">
+
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../img/1.jpg" alt="Aboriginal_1" width="1100" height="500">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/2.jpeg" alt="Aboriginal_2" width="1100" height="500">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/3.jpg" alt="Aboriginal_3" width="1100" height="500">
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </header>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 mb-4 mt-2 text-center">
+          <h2></h2>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <!--日曆-->
+        <div id="calendar" class="col-lg-6 col-md-6 col-sm-12"></div>
+        <!---->
+        <div class="col-lg-6 col-md-6 col-sm-12 text-center">
+          <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="../img/賽德克收穫節.jpg"
+            data-holder-rendered="true">
+          <h3>12/31</h3>
+          <p style="font-family: Microsoft JhengHei;">賽德克收穫節<br>收穫節又名<br><mark>"Qlasan Tninun | Smesung
+              Kmetuy"</mark><br>這兩字是族人在基督教中用語彙所新創的詞組<br>表<mark>"歡欣收穫"、"慶祝採收"</mark>之意<br>傳統的祭儀名稱是"s-m-ratuc"，翻作年祭<br>代表除舊佈新，期望新的一年豐盛，健康等
+          </p>
+        </div>
+
+        <div class="container">
+          <h2>族群介紹</h2>
+          <table class="table table-striped">
+            <thead>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <a href="http://www.tipp.org.tw/aborigines_info.asp?A_ID=8"
+                    style="text-decoration:none;color: black;">
+                    <img src="../img/阿美族.jpg" class="img-responsive center-block" alt="Cinque Terre" width="256"
+                      height="192">
+                    <h3>阿美族</h3>
+                  </a>
+                </td>
+                <td>
+                  <a href="http://www.tipp.org.tw/aborigines_info.asp?A_ID=9"
+                    style="text-decoration:none;color: black;">
+                    <img src="../img/泰雅族.jpg" class="img-responsive center-block" alt="Cinque Terre" width="256"
+                      height="192">
+                    <h3>泰雅族</h3>
+                  </a>
+                </td>
+                <td>
+                  <a href="http://www.tipp.org.tw/aborigines_info.asp?A_ID=10"
+                    style="text-decoration:none;color: black;">
+                    <img src="../img/排灣族.jpg" class="img-responsive center-block" alt="Cinque Terre" width="256"
+                      height="192">
+                    <h3>排灣族</h3>
+                  </a>
+
+                </td>
+                <td>
+                  <a href="http://www.tipp.org.tw/aborigines_info.asp?A_ID=5"
+                    style="text-decoration:none;color: black;">
+                    <img src="../img/布農族.jpg" class="img-responsive center-block" alt="Cinque Terre" width="256"
+                      height="192">
+                    <h3>布農族</h3>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="http://www.tipp.org.tw/aborigines_info.asp?A_ID=6"
+                    style="text-decoration:none;color: black;">
+                    <img src="../img/卑南族.jpg" class="img-responsive center-block" alt="Cinque Terre" width="256"
+                      height="192">
+                    <h3>卑南族</h3>
+                  </a>
+                </td>
+                <td>
+                  <a href="http://www.tipp.org.tw/aborigines_info.asp?A_ID=13"
+                    style="text-decoration:none;color: black;">
+                    <img src="../img/魯凱族.jpg" class="img-responsive center-block" alt="Cinque Terre" width="256"
+                      height="192">
+                    <h3>魯凱族</h3>
+                  </a>
+                </td>
+                <td>
+                  <a href="http://www.tipp.org.tw/aborigines_info.asp?A_ID=12"
+                    style="text-decoration:none;color: black;">
+                    <img src="../img/鄒族.jpg" class="img-responsive center-block" alt="Cinque Terre" width="256"
+                      height="192">
+                    <h3>鄒族</h3>
+                  </a>
+                </td>
+                <td>
+                  <a href="http://www.tipp.org.tw/aborigines_info.asp?A_ID=15"
+                    style="text-decoration:none;color: black;">
+                    <img src="../img/賽夏族.jpg" class="img-responsive center-block" alt="Cinque Terre" width="256"
+                      height="192">
+                    <h3>賽夏族</h3>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="http://www.tipp.org.tw/aborigines_info.asp?A_ID=11"
+                    style="text-decoration:none;color: black;">
+                    <img src="../img/達悟族.jpg" class="img-responsive center-block" alt="Cinque Terre" width="256"
+                      height="192">
+                    <h3>達悟族</h3>
+                  </a>
+                </td>
+                <td>
+                  <a href="http://www.tipp.org.tw/aborigines_info.asp?A_ID=7"
+                    style="text-decoration:none;color: black;">
+                    <img src="../img/邵族.jpg" class="img-responsive center-block" alt="Cinque Terre" width="256"
+                      height="192">
+                    <h3>邵族</h3>
+                  </a>
+                </td>
+                <td>
+                  <a href="http://www.tipp.org.tw/aborigines_info.asp?A_ID=14"
+                    style="text-decoration:none;color: black;">
+                    <img src="../img/葛瑪蘭族.jpg" class="img-responsive center-block" alt="Cinque Terre" width="256"
+                      height="192">
+                    <h3>葛瑪蘭族</h3>
+                  </a>
+                </td>
+                <td>
+                  <a href="http://www.tipp.org.tw/aborigines_info.asp?A_ID=3"
+                    style="text-decoration:none;color: black;">
+                    <img src="../img/太魯閣族.jpg" class="img-responsive center-block" alt="Cinque Terre" width="256"
+                      height="192">
+                    <h3>太魯閣族</h3>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="http://www.tipp.org.tw/aborigines_info.asp?A_ID=4"
+                    style="text-decoration:none;color: black;">
+                    <img src="../img/撒奇萊雅族.jpg" class="img-responsive center-block" alt="Cinque Terre" width="256"
+                      height="192">
+                    <h3>撒奇萊雅族</h3>
+                  </a>
+                </td>
+                <td>
+                  <a href="http://www.tipp.org.tw/aborigines_info.asp?A_ID=2"
+                    style="text-decoration:none;color: black;">
+                    <img src="../img/賽德克族.jpg" class="img-responsive center-block" alt="Cinque Terre" width="256"
+                      height="192">
+                    <h3>賽德克族</h3>
+                  </a>
+                </td>
+                <td>
+                  <a href="http://www.tipp.org.tw/aborigines_info.asp?A_ID=17"
+                    style="text-decoration:none;color: black;">
+                    <img src="../img/拉阿魯哇族.jpg" class="img-responsive center-block" alt="Cinque Terre" width="256"
+                      height="192">
+                    <h3>拉阿魯哇族</h3>
+                  </a>
+                </td>
+                <td>
+                  <a href="http://www.tipp.org.tw/aborigines_info.asp?A_ID=18"
+                    style="text-decoration:none;color: black;">
+                    <img src="../img/卡那卡那富族.jpg" class="img-responsive center-block" alt="Cinque Terre" width="256"
+                      height="192">
+                    <h3>卡那卡那富族</h3>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p style="font-size: 10px;">Copyright © MyWebsite. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- jQuery (necessary for Bootstrap"s JavaScript plugins) -->
+  <script
+    src="file:///C|/Users/User/AppData/Roaming/Adobe/Dreamweaver 2020/zh_TW/Configuration/Temp/Assets/eam20EE.tmp/js/jquery-3.3.1.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script
+    src="file:///C|/Users/User/AppData/Roaming/Adobe/Dreamweaver 2020/zh_TW/Configuration/Temp/Assets/eam20EE.tmp/js/popper.min.js"></script>
+  <script
+    src="file:///C|/Users/User/AppData/Roaming/Adobe/Dreamweaver 2020/zh_TW/Configuration/Temp/Assets/eam20EE.tmp/js/bootstrap-4.3.1.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
