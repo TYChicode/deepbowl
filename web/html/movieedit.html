@@ -73,13 +73,10 @@
                                     <a style="text-decoration:none;color: black;">
                                         <div class="form-group">
                                             <div class="col">
-                                                <label for="sel1">電影</label>
-                                                <select class="form-control" id="sel1">
-                                        <option>達悟族-豐年祭</option>
-                                        <option>賽夏族-矮靈祭</option>
-                                        <option>卑南族-猴祭</option>
-                                        <option>布農族-射耳祭</option>
-                                      </select>
+                                                <label for="uname">電影:</label>
+                                                <input type="text" class="form-control" id="moviename" placeholder="請輸入電影名稱" name="uname" required>
+                                                <div class="valid-feedback">Valid.</div>
+                                                <div class="invalid-feedback">Please fill out this field.</div>
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -106,8 +103,16 @@
                                         </div>
                                         <div class="form-group">
                                             <div class="col">
-                                                <label for="sel1">場次</label>
-                                                <select class="form-control" id="sel1">
+                                                <label for="uname">場次:</label>
+                                                <input type="text" class="form-control" id="time" placeholder="請輸入場次 " name="uname " required>
+                                                <div class="valid-feedback ">Valid.</div>
+                                                <div class="invalid-feedback ">Please fill out this field.</div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group ">
+                                            <div class="col ">
+                                                <label for="sel1 ">影城</label>
+                                                <select class="form-control " id="sel1 ">
                                         <option>達悟族-豐年祭</option>
                                         <option>賽夏族-矮靈祭</option>
                                         <option>卑南族-猴祭</option>
@@ -115,47 +120,59 @@
                                       </select>
                                             </div>
                                         </div>
-                                        <h5>影廳 : </h5>
-                                        <h5>剩餘座位 : </h5>
-                                        <h5>—————————</h5>
-                                        <div class="form-group">
-                                            <div class="col">
-                                                <label for="sel1">訂購張數</label>
-                                                <select class="form-control" id="sel1">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                      </select>
+                                        <div class="form-group ">
+                                            <div class="col ">
+                                                <label for="uname ">總座位數:</label>
+                                                <input type="text " class="form-control " id="seat" placeholder="請輸入座位數 " name="uname " required>
+                                                <div class="valid-feedback ">Valid.</div>
+                                                <div class="invalid-feedback ">Please fill out this field.</div>
                                             </div>
                                         </div>
-                                        <h5>未選張數 : </h5>
-                                        <div class="col">
-                                            <button type="submit" class="btn btn-primary">清除</button>
+                                        <div class="col ">
+                                            <button type="submit " class="btn btn-primary ">新增</button>
                                         </div>
-                                        <div class="col">
-                                            <button type="submit" class="btn btn-primary">送出</button>
-                                        </div>
-
                                     </a>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
-                    <h3>座位圖</h3>
+                    <h3>場次</h3>
                     <h5>‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</h5>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/eWhfQDF2OPI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <a>文字簡介</a>
+                    <h5>XX月XX日</h5>
+                    <h5>------------------------------------------------------------</h5>
+                    <h5>XX:XX X廳---------------------------------------------------</h5>
+                    <div class="col ">
+                        <button type="submit " class="btn btn-primary ">編輯</button>
+                        <button type="submit " class="btn btn-primary ">刪除</button>
+                    </div>
+                    <h5>XX:XX X廳---------------------------------------------------</h5>
+                    <div class="col ">
+                        <button type="submit " class="btn btn-primary ">編輯</button>
+                        <button type="submit " class="btn btn-primary ">刪除</button>
+                    </div>
+                    <h5>XX月XX日</h5>
+                    <h5>------------------------------------------------------------</h5>
+                    <h5>XX:XX X廳---------------------------------------------------</h5>
+                    <div class="col ">
+                        <button type="submit " class="btn btn-primary ">編輯</button>
+                        <button type="submit " class="btn btn-primary ">刪除</button>
+                    </div>
+                    <h5>XX:XX X廳---------------------------------------------------</h5>
+                    <div class="col ">
+                        <button type="submit " class="btn btn-primary ">編輯</button>
+                        <button type="submit " class="btn btn-primary ">刪除</button>
+                    </div>
+
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <p style="font-size: 10px;">Copyright © MyWebsite. All rights reserved.</p>
+    <footer class="text-center ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-12 ">
+                    <p style="font-size: 10px; ">Copyright © MyWebsite. All rights reserved.</p>
                 </div>
             </div>
         </div>
