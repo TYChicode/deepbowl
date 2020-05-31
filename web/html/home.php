@@ -70,7 +70,7 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <a href="../html/movie_introduce/久美子的奇異旅程.html"
+                                    <a href="../html/movie_introduce/久美子的奇異旅程.php"
                                         style="text-decoration:none;color: black;">
                                         <img src="../img/久美子的奇異旅程.jpg" class="img-responsive center-block"
                                             alt="Cinque Terre" width="256" height="192">
@@ -78,7 +78,7 @@
                                     </a>
                                 </td>
                                 <td>
-                                    <a href="../html/movie_introduce/偷窺.html"
+                                    <a href="../html/movie_introduce/偷窺.php"
                                         style="text-decoration:none;color: black;">
                                         <img src="../img/偷窺.jpg" class="img-responsive center-block" alt="Cinque Terre"
                                             width="256" height="192">
@@ -86,7 +86,7 @@
                                     </a>
                                 </td>
                                 <td>
-                                    <a href="../html/movie_introduce/冰雪奇緣.html"
+                                    <a href="../html/movie_introduce/冰雪奇緣.php"
                                         style="text-decoration:none;color: black;">
                                         <img src="../img/冰雪奇緣.jpg" class="img-responsive center-block"
                                             alt="Cinque Terre" width="256" height="192">
@@ -95,7 +95,7 @@
 
                                 </td>
                                 <td>
-                                    <a href="../html/movie_introduce/安眠醫生.html"
+                                    <a href="../html/movie_introduce/安眠醫生.php"
                                         style="text-decoration:none;color: black;">
                                         <img src="../img/安眠醫生.jpg" class="img-responsive center-block"
                                             alt="Cinque Terre" width="256" height="192">
@@ -113,7 +113,7 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <a href="../html/movie_introduce/尖峰人生暫停一下.html"
+                                    <a href="../html/movie_introduce/尖峰人生暫停一下.php"
                                         style="text-decoration:none;color: black;">
                                         <img src="../img/尖峰人生暫停一下.jpg" class="img-responsive center-block"
                                             alt="Cinque Terre" width="256" height="192">
@@ -121,7 +121,7 @@
                                     </a>
                                 </td>
                                 <td>
-                                    <a href="../html/movie_introduce/情書.html"
+                                    <a href="../html/movie_introduce/情書.php"
                                         style="text-decoration:none;color: black;">
                                         <img src="../img/情書.jpg" class="img-responsive center-block" alt="Cinque Terre"
                                             width="256" height="192">
@@ -129,7 +129,7 @@
                                     </a>
                                 </td>
                                 <td>
-                                    <a href="../html/movie_introduce/我的蛋糕師情人.html"
+                                    <a href="../html/movie_introduce/我的蛋糕師情人.php"
                                         style="text-decoration:none;color: black;">
                                         <img src="../img/我的蛋糕師情人.jpg" class="img-responsive center-block"
                                             alt="Cinque Terre" width="256" height="192">
@@ -137,7 +137,7 @@
                                     </a>
                                 </td>
                                 <td>
-                                    <a href="../html/movie_introduce/是誰在造神.html"
+                                    <a href="../html/movie_introduce/是誰在造神.php"
                                         style="text-decoration:none;color: black;">
                                         <img src="../img/是誰在造神.jpg" class="img-responsive center-block"
                                             alt="Cinque Terre" width="256" height="192">
@@ -155,7 +155,7 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <a href="../html/movie_introduce/樓下的房客.html"
+                                    <a href="../html/movie_introduce/樓下的房客.php"
                                         style="text-decoration:none;color: black;">
                                         <img src="../img/樓下的房客.jpg" class="img-responsive center-block"
                                             alt="Cinque Terre" width="256" height="192">
@@ -163,7 +163,7 @@
                                     </a>
                                 </td>
                                 <td>
-                                    <a href="../html/movie_introduce/殺手保鑣.html"
+                                    <a href="../html/movie_introduce/殺手保鑣.php"
                                         style="text-decoration:none;color: black;">
                                         <img src="../img/殺手保鑣.jpg" class="img-responsive center-block"
                                             alt="Cinque Terre" width="256" height="192">
@@ -171,7 +171,7 @@
                                     </a>
                                 </td>
                                 <td>
-                                    <a href="../html/movie_introduce/返校.html"
+                                    <a href="../html/movie_introduce/返校.php"
                                         style="text-decoration:none;color: black;">
                                         <img src="../img/返校.jpg" class="img-responsive center-block" alt="Cinque Terre"
                                             width="256" height="192">
@@ -179,7 +179,7 @@
                                     </a>
                                 </td>
                                 <td>
-                                    <a href="../html/movie_introduce/特種部隊.html"
+                                    <a href="../html/movie_introduce/特種部隊.php"
                                         style="text-decoration:none;color: black;">
                                         <img src="../img/特種部隊.jpg" class="img-responsive center-block"
                                             alt="Cinque Terre" width="256" height="192">
