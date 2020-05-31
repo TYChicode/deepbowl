@@ -39,13 +39,13 @@
         class="navbar-toggler-icon"></span> </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active"> <a class="nav-link" href="../html/home.html">電影介紹<span
+            <li class="nav-item active"> <a class="nav-link" href="../html/home.php">電影介紹<span
                     class="sr-only">(current)</span></a> </li>
                 <li class="nav-item"> <a class="nav-link" href="">空位查詢</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="../html/booking.html">線上訂票</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="../html/change.html">退換票</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="../html/booking_record.html">查詢訂票紀錄</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="../html/SingUp.html">登入/註冊</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="../html/booking.php">線上訂票</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="../html/change.php">退換票</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="../html/booking_record.php">查詢訂票紀錄</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="../html/SingUp.php">登入/註冊</a> </li>
             </ul>
         </div>
     </nav>
