@@ -33,10 +33,10 @@
         class="navbar-toggler-icon"></span> </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item"> <a class="nav-link" href="../html/search_booking_record.html">查詢訂票紀錄</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="../html/search_return_record.html">查詢退票紀錄</a> </li>
-                <li class="nav-item active"> <a class="nav-link" href="../html/search_change_record.html">查詢換票紀錄</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="../html/movie_edit.html">編輯電影場次</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="../html/search_booking_record.php">查詢訂票紀錄</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="../html/search_return_record.php">查詢退票紀錄</a> </li>
+                <li class="nav-item active"> <a class="nav-link" href="../html/search_change_record.php">查詢換票紀錄</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="../html/movie_edit.php">編輯電影場次</a> </li>
                 <li class="nav-item"> <a class="nav-link" href="">登入/註冊</a> </li>
             </ul>
         </div>
