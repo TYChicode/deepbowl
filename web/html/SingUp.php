@@ -106,11 +106,12 @@
         </form>
 
         <h3>註冊</h3>
-        <form action="/action_page.php" class="needs-validation" novalidate>
+        <form action="register.php" class="needs-validation" novalidate>
             <div class="form-group">
                 <div class="col">
                     <label for="uname">姓名:</label>
                     <input type="text" class="form-control" id="uname" placeholder="請輸入您的姓名" name="uname" required>
+                    <input type='submit' />
                     <div class="valid-feedback">Valid.</div>
                     <div class="invalid-feedback">Please fill out this field.</div>
                 </div>
