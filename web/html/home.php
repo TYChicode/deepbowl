@@ -33,22 +33,9 @@
 </style>
 
 <body style="font-family: Microsoft JhengHei; font-size: 17px;">
-
     <?php
-    $servername = "127.0.0.1";
-    $username = "chi";
-    $password = "r0952365649";
-
-    // 创建连接
-    $conn = new mysqli($servername, $username, $password);
-
-    // 检测连接
-    if ($conn->connect_error) {
-        die("连接失败: " . $conn->connect_error);
-    }
-    echo "连接成功";
+        require_once('Connectsql.php');
     ?>
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="../html/Home.php" style="font-size: 25px;">電影院訂票系統</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
