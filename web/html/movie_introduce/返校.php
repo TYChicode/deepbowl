@@ -50,6 +50,10 @@
         </div>
     </nav>
 
+    <?php
+        require_once('Connectsql.php');
+    ?>
+
     <section>
         <div class="container">
             <div class="row">
