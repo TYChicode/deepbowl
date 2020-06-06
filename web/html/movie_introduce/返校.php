@@ -56,9 +56,9 @@
         $sql = "SELECT `name` FROM `movie_information` ";
         $stmt = $db->prepare($sql);
         $stmt->fetch();
-//        if($stmt->fetch()){
-//           echo '<p>返校</p>';
-//       }
+        if($stmt->fetch()){
+           echo '<p>返校</p>';
+       }
 
     ?>
 
