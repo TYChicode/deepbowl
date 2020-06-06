@@ -16,15 +16,14 @@
         $sql = "INSERT INTO `customer_information` (`id`, `name`, `email`, `PhoneNumber`, `IDnumber`) VALUES (NULL, '$username', '$email', '$phone', '$id')"; 
         if ($conn->query($sql) === TRUE) {
             echo '你的帳號已成功新增。username：'. $username;
-        } else {
-            echo "Error: " . $sql . "<br>" . $conn->error;
-        }
-        $sql = "INSERT INTO `account_information` (`e-mail`, `password`, `identity`) VALUES ('$email', '$password', '使用者')"; 
-        if ($conn->query($sql) === TRUE) {
-            echo '你的帳號已成功新增。username：'. $username;
+            $sql = "INSERT INTO `account_information` (`e-mail`, `password`, `identity`) VALUES ('$email', '$password', '使用者')"; 
+            if ($conn->query($sql) === TRUE) {
+                echo '你的帳號已成功新增。username：'. $username;
+            } else {
+                echo "Error: " . $sql . "<br>" . $conn->error;
+            }
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
     }
     mysqli_close($conn);
-?>
