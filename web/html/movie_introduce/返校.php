@@ -52,6 +52,14 @@
 
     <?php
         require_once('Connectsql.php');
+
+        $sql = "SELECT `返校` FROM `movie_information` ";
+        $stmt = $deepbowl->prepare($sql);
+        $stmt->fetch();
+        if($stmt->fetch()){
+           echo '<p>返校</p>';
+       }
+
     ?>
 
     <section>
@@ -93,7 +101,6 @@
                     <h5>‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</h5>
                     <iframe width="900" height="506" src="https://www.youtube.com/embed/Cq0K2ipTaPM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div>
-                        <a>文字簡介</a>
                         <a>1962年，寂寥而肅殺的時代，翠華中學高三生方芮欣，意外與輔導老師張明暉相戀，在問題叢生的家庭及學校中，他成為她唯一的出路。追求自由的張明暉，另與師生殷翠涵、魏仲廷等人組織讀書會，研讀禁書，雖為高壓校園帶來一線呼吸的空間，卻也冒著生死攸關的風險。一夜，方芮欣與魏仲廷在暴雨中的校園甦醒，卻發現校園逐漸從他們熟悉的世界剝離，在鬼魅橫行的異域，他們被迫面對可怖的真相…。</a>
                     </div>
                 </div>
