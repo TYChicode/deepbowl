@@ -1,6 +1,6 @@
 <?php
     require_once('Connectsql.php');
-    $username = $_POST['username']; // 填入帳號密碼
+    $username = $_POST['uname']; // 填入帳號密碼
     $password = $_POST['password'];
     $sql = "SELECT `username` FROM `users` WHERE `username`='$username'";
     $result = $conn->query($sql);
