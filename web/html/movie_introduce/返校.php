@@ -53,8 +53,8 @@
     <?php
         require_once('Connectsql.php');
 
-        $sql = "SELECT `name` FROM `movie_information` ";
-        $stmt = $db->prepare($sql);
+        $sql = "SELECT `返校` FROM `movie_information` ";
+        $stmt = $deepbowl->prepare($sql);
         $stmt->fetch();
         if($stmt->fetch()){
            echo '<p>返校</p>';
