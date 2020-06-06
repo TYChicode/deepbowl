@@ -28,7 +28,7 @@
 
 <body style="font-family: Microsoft JhengHei; font-size: 17px;">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="../html/Home.php" style="font-size: 25px;">電影院訂票系統</a>
+        <a class="navbar-brand" href="../html/home.php" style="font-size: 25px;">電影院訂票系統</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span
         class="navbar-toggler-icon"></span> </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -79,7 +79,7 @@
             <div class="form-group">
                 <div class="col">
                     <label for="email">Email:</label>
-                    <input type="email" class="form-control" id="email" placeholder="請輸入Email" name="email" required>
+                    <input type="email" class="form-control" id="email" placeholder="請輸入Email" name="email" required="required">
                     <div class="valid-feedback">Valid.</div>
                     <div class="invalid-feedback">Please fill out this field.</div>
                 </div>
@@ -87,7 +87,7 @@
             <div class="form-group">
                 <div class="col">
                     <label for="email">密碼:</label>
-                    <input type="text" class="form-control" id="password" placeholder="請輸入密碼" name="password" required>
+                    <input type="text" class="form-control" id="password" placeholder="請輸入密碼" name="password" required="required">
                     <div class="valid-feedback">Valid.</div>
                     <div class="invalid-feedback">Please fill out this field.</div>
                 </div>
@@ -118,7 +118,7 @@
             <div class="form-group">
                 <div class="col">
                     <label for="phone">電話:</label>
-                    <input type="tel" class="form-control" id="phone" placeholder="請輸入您的手機" name="phone" requiredrequired="required">
+                    <input type="tel" class="form-control" id="phone" placeholder="請輸入您的手機" name="phone" required="required">
                     <div class="valid-feedback">Valid.</div>
                     <div class="invalid-feedback">Please fill out this field.</div>
                 </div>
