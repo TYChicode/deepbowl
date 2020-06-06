@@ -49,7 +49,16 @@
             </ul>
         </div>
     </nav>
+    <?php
+        require_once('Connectsql.php');
 
+        $sql = "SELECT `name` FROM `movie_information` ";
+        if($stmt = $db->prepare($sql)){
+            while($result = mysqli_fetch_object($stmt)){
+            echo '<p>偷窺</p>';
+            }
+        }
+    ?>
     <section>
         <div class="container">
             <div class="row">
