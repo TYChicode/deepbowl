@@ -106,12 +106,11 @@
         </form>
 
         <h3>註冊</h3>
-        <form action="register.php" class="needs-validation" novalidate>
+        <form action="register.php" method="post" class="needs-validation" novalidate>
             <div class="form-group">
                 <div class="col">
                     <label for="uname">姓名:</label>
-                    <input type="text" class="form-control" id="uname" placeholder="請輸入您的姓名" name="uname" required>
-                    <input type='submit' />
+                    <input type="text" class="form-control" id="uname" placeholder="請輸入您的姓名" name="uname" required="required">
                     <div class="valid-feedback">Valid.</div>
                     <div class="invalid-feedback">Please fill out this field.</div>
                 </div>
@@ -119,7 +118,7 @@
             <div class="form-group">
                 <div class="col">
                     <label for="phone">電話:</label>
-                    <input type="tel" class="form-control" id="phone" placeholder="請輸入您的手機" name=" phone" required>
+                    <input type="tel" class="form-control" id="phone" placeholder="請輸入您的手機" name="phone" requiredrequired="required">
                     <div class="valid-feedback">Valid.</div>
                     <div class="invalid-feedback">Please fill out this field.</div>
                 </div>
@@ -127,7 +126,7 @@
             <div class="form-group">
                 <div class="col">
                     <label for="id">身分證字號(外籍旅客請輸入護照號碼):</label>
-                    <input type="text" class="form-control" id="id" placeholder="請輸入身分證字號/護照號碼" name="id" required>
+                    <input type="text" class="form-control" id="id" placeholder="請輸入身分證字號/護照號碼" name="id" required="required">
                     <div class="valid-feedback">Valid.</div>
                     <div class="invalid-feedback">Please fill out this field.</div>
                 </div>
@@ -135,7 +134,7 @@
             <div class="form-group">
                 <div class="col">
                     <label for="email">Email:</label>
-                    <input type="email" class="form-control" id="email" placeholder="請輸入Email" name="email" required>
+                    <input type="email" class="form-control" id="email" placeholder="請輸入Email" name="email" required="required">
                     <div class="valid-feedback">Valid.</div>
                     <div class="invalid-feedback">Please fill out this field.</div>
                 </div>
@@ -143,7 +142,7 @@
             <div class="form-group">
                 <div class="col">
                     <label for="email">密碼:</label>
-                    <input type="text" class="form-control" id="password" placeholder="請輸入密碼" name="password" required>
+                    <input type="text" class="form-control" id="password" placeholder="請輸入密碼" name="password" required="required">
                     <div class="valid-feedback">Valid.</div>
                     <div class="invalid-feedback">Please fill out this field.</div>
                 </div>
@@ -151,7 +150,7 @@
             <div class="form-group">
                 <div class="col">
                     <label for="email">確認密碼:</label>
-                    <input type="text" class="form-control" id="pw" placeholder="請確認密碼" name="pw" required>
+                    <input type="text" class="form-control" id="pw" placeholder="請確認密碼" name="pw" required="required">
                     <div class="valid-feedback">Valid.</div>
                     <div class="invalid-feedback">Please fill out this field.</div>
                 </div>
@@ -159,7 +158,7 @@
             <div class="form-group form-check">
                 <div class="col">
                     <label class="form-check-label">
-            <input class="form-check-input" type="checkbox" name="check" required> 已確認資訊填寫無誤
+            <input class="form-check-input" type="checkbox" name="check" required="required"> 已確認資訊填寫無誤
             <div class="valid-feedback">點選送出按鈕</div>
             <div class="invalid-feedback">確認填寫無誤後請勾選</div>
           </label>
