@@ -1,8 +1,8 @@
 <?php
     //連結資料庫
-    $servername = "127.0.0.1";
-    $username = "chi";
-    $password = "r0952365649";
+    $servername = "36.234.0.40";
+    $username = "open";
+    $password = "0000";
     $dbname = "deepbowl";
 
     // 创建连接
