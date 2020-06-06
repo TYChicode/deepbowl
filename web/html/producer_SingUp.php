@@ -106,7 +106,7 @@
         <form action="/action_page.php" class="needs-validation" novalidate>
             <div class="form-group">
                 <div class="col">
-                    <label for="uname">姓名:</label>
+                    <label for="uname">廠商名稱:</label>
                     <input type="text" class="form-control" id="uname" placeholder="請輸入您的姓名" name="uname" required>
                     <div class="valid-feedback">Valid.</div>
                     <div class="invalid-feedback">Please fill out this field.</div>
@@ -116,14 +116,6 @@
                 <div class="col">
                     <label for="phone">電話:</label>
                     <input type="tel" class="form-control" id="phone" placeholder="請輸入您的手機" name=" phone" required>
-                    <div class="valid-feedback">Valid.</div>
-                    <div class="invalid-feedback">Please fill out this field.</div>
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="col">
-                    <label for="id">身分證字號(外籍旅客請輸入護照號碼):</label>
-                    <input type="text" class="form-control" id="id" placeholder="請輸入身分證字號/護照號碼" name="id" required>
                     <div class="valid-feedback">Valid.</div>
                     <div class="invalid-feedback">Please fill out this field.</div>
                 </div>
