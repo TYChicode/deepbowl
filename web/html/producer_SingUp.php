@@ -115,7 +115,7 @@
             <div class="form-group">
                 <div class="col">
                     <label for="phone">電話:</label>
-                    <input type="tel" class="form-control" id="phone" placeholder="請輸入您的手機" name=" phone" required="required">
+                    <input type="tel" class="form-control" id="phone" placeholder="請輸入您的手機" name="phone" required="required">
                     <div class="valid-feedback">Valid.</div>
                     <div class="invalid-feedback">Please fill out this field.</div>
                 </div>

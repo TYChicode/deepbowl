@@ -7,15 +7,15 @@
     $password = $_POST['password'];
     $pw = $_POST['pw'];
 
-    $sql = "SELECT `name` FROM `company_information` WHERE `email`='$email'";
+    $sql = "SELECT `email` FROM `account_information` WHERE `email`='$email'";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) { // 大於零代表有這個資料。
         echo '這個 e-mail:' . $email . ' 已經註冊過';
     } else {
-        $sql = "INSERT INTO `company_information` (`id`, `name`, `email`, `PhoneNumber`) VALUES (NULL, '$username', '$email', '$phone')"; 
+        $sql = "INSERT INTO `account_information` (`email`, `password`, `identity`) VALUES ('$email', '$password', '廠商')"; 
         if ($conn->query($sql) === TRUE) {
-            echo '你的帳號已成功新增。username：'. $username;
-            $sql = "INSERT INTO `account_information` (`e-mail`, `password`, `identity`) VALUES ('$email', '$password', '使用者')"; 
+            //echo '你的帳號已成功新增。username：'. $username;
+            $sql = "INSERT INTO `company_information` (`id`, `name`, `email`, `telephone`) VALUES (NULL, '$username', '$email', '$phone')"; 
             if ($conn->query($sql) === TRUE) {
                 echo '你的帳號已成功新增。username：'. $username;
             } else {
