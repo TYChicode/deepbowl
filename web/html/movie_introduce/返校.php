@@ -52,6 +52,13 @@
 
     <?php
         require_once('Connectsql.php');
+
+        $sql = "SELECT `name` FROM `movie_information` ";
+        $stmt = $db->prepare($sql);
+        if($stmt->fetch()){
+            echo '<p>返校</p>';
+        }
+
     ?>
 
     <section>
