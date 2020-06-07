@@ -11,9 +11,10 @@
         if ($result->num_rows > 0){
             $pw = $result->fetch_assoc();
             if ($password === $pw["password"]){
-                sleep(3);
-                header("Location: home.php"); 
-                echo '登入成功，3秒後為您跳轉';
+                setcookie("logined",1,"time()+3600");
+                setcookie("email",$email,"time()+3600");
+                echo("<script>alert('登入成功')</script>");
+                echo("<script>window.location = 'home.php';</script>");
             }
             else {
                 echo '帳號密碼錯誤';
