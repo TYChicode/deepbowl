@@ -34,7 +34,7 @@
 
 <body style="font-family: Microsoft JhengHei; font-size: 17px;">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="../html/Home.html" style="font-size: 25px;">電影院訂票系統</a>
+        <a class="navbar-brand" href="../html/Home.php" style="font-size: 25px;">電影院訂票系統</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span
         class="navbar-toggler-icon"></span> </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -49,16 +49,6 @@
             </ul>
         </div>
     </nav>
-    <?php
-        require_once('Connectsql.php');
-
-        $sql = "SELECT `name` FROM `movie_information` ";
-        if($stmt = $db->prepare($sql)){
-            while($result = mysqli_fetch_object($stmt)){
-            echo '<p>偷窺</p>';
-            }
-        }
-    ?>
     <section>
         <div class="container">
             <div class="row">
@@ -81,14 +71,34 @@
                                     </a>
                                 </td>
                                 <td>
-                                    <a style="text-decoration:none;color: black;">
-                                        <h3>久美子的奇異旅程</h3>
-                                        <h5>演員 : 菊地凜子、勝部演之、雪莉維娜、大衛賽尼爾</h5>
-                                        <h5>導演 : 大衛賽尼爾</h5>
-                                        <h5>發片公司 : 聯影</h5>
-                                        <h5>電影分級 : </h5>
-                                        <h5>類型 : 劇情/奇幻</h5>
-                                        <h5>片長 : 105分</h5>
+                                    <h3>
+                                        <?php
+                                            require_once('Connectsql.php');
+                                            $sql = "SELECT *  FROM `movie_information` WHERE `id` = 2";
+                                            $result = $conn->query($sql);
+                                            if ($result->num_rows > 0) { // 大於零代表有這個資料。
+                                                while ($row = $result->fetch_assoc()) {
+                                                    echo $row["name"]."<br>";
+                                                }
+                                            }else {
+                                                echo "0 results";
+                                            }
+                                        ?>
+                                    </h3>
+                                    <a>
+                                        <?php
+                                            require_once('Connectsql.php');
+                                            $sql = "SELECT *  FROM `movie_information` WHERE `id` = 2";
+                                            $result = $conn->query($sql);
+                                            if ($result->num_rows > 0) { // 大於零代表有這個資料。
+                                                while ($row = $result->fetch_assoc()) {
+                                                    echo "演員 : ".$row["actor"]."<br>"."導演 : ".$row["director"]."<br>"."發行公司 : ".$row["publisher"]."<br>".
+                                                    "電影分級 : ".$row["rating"]."<br>"."片長 : ".$row["time"]."分"."<br>"."上映日期 : ".$row["ReleaseDate"]."<br>";
+                                                }
+                                            }else {
+                                                echo "0 results";
+                                            }
+                                        ?>
                                     </a>
                                 </td>
                             </tr>
@@ -98,8 +108,19 @@
                     <h5>‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</h5>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/eWhfQDF2OPI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div>
-                        <a>文字簡介</a>
-                        <a>久美子背叛了一切社會的期待：30歲仍未婚，沒有客氣笑容，上班邋遢素顏，事業更是半吊子。上司的冷嘲熱諷、母親責備的電話、老同學突如其來的邀約…在東京窄小的城市縫隙裡，她與寵物兔斑斑相依為命。儘管人生看似在浮不出水面的深水區徘徊，但久美子堅信，在千里外的美國，有個重大的使命正等待著她。</a>
+                        <?php
+                            require_once('Connectsql.php');
+                            $sql = "SELECT *  FROM `movie_information` WHERE `id` = 2";
+                            $result = $conn->query($sql);
+                            if ($result->num_rows > 0) { // 大於零代表有這個資料。
+                                while ($row = $result->fetch_assoc()) {
+                                    echo $row["introduction"]."<br>";
+                                }
+                            }else {
+                                echo "0 results";
+                            }
+                            mysqli_close($conn);
+                        ?>
                     </div>
                 </div>
             </div>

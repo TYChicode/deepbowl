@@ -144,8 +144,6 @@
                     </table>
                     <h3>座位圖</h3>
                     <h5>‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</h5>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/eWhfQDF2OPI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <a>文字簡介</a>
                 </div>
             </div>
         </div>
