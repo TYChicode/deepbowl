@@ -57,7 +57,7 @@
 
     <div class="container">
         <h3>登入</h3>
-        <form action="/action_page.php" class="needs-validation" novalidate>
+        <form action="login.php" method="post" class="needs-validation" novalidate>
             <div class="form-group">
                 <div class="col">
                     <label for="email">Email:</label>
