@@ -40,7 +40,6 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item"> <a class="nav-link" href="../html/home.php">電影介紹<span class="sr-only">(current)</span></a> </li>
-                <li class="nav-item"> <a class="nav-link" href="">空位查詢</a> </li>
                 <li class="nav-item"> <a class="nav-link" href="../html/booking.php">線上訂票</a> </li>
                 <li class="nav-item active"> <a class="nav-link" href="../html/change.php">退換票</a> </li>
                 <li class="nav-item"> <a class="nav-link" href="../html/booking_record.php">查詢訂票紀錄</a> </li>
