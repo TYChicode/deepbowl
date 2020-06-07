@@ -33,6 +33,14 @@
 </style>
 
 <body style="font-family: Microsoft JhengHei; font-size: 17px;">
+    <!-- check whether logined or not -->
+    <?php
+    if ($_COOKIE["logined"] != 1) {
+        echo ("<script>alert('請先登入')</script>");
+        echo ("<script>window.location = 'SingUp.php';</script>");
+    }
+    ?>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="../html/Home.php" style="font-size: 25px;">電影院訂票系統</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span
@@ -77,6 +85,32 @@
                                             <div class="col">
                                                 <label for="sel1">電影</label>
                                                 <select class="form-control" id="sel1">
+                                                    <?php
+                                                        require_once('Connectsql.php');
+
+                                                        $q = isset($_GET['q'])? htmlspecialchars($_GET['q']) : '';
+
+                                                        $email = $_COOKIE["email"];
+                                                        $sql = "SELECT `id` FROM `customer_information` WHERE `email` LIKE '$email'";
+                                                        $result = $conn->query($sql);
+                                                        $row = $result->fetch_assoc();
+
+                                                        $id = $row["id"];
+                                                        
+                                                        
+                                                        $sql = "SELECT *  FROM `order_information` WHERE `customer_id`='$id'";
+                                                        $result = $conn->query($sql);
+                                                    ?>
+                                                    <form action="" method="get">
+                                                        <select name="q">
+                                                        <option value="">電影:</option>
+                                                        <option value="RUNOOB">Runoob</option>
+                                                        <option value="GOOGLE">Google</option>
+                                                        <option value="TAOBAO">Taobao</option>
+                                                        </select>
+                                                    　
+                                                    </form>
+
                                         <option></option>
                                         <option></option>
                                         <option></option>
