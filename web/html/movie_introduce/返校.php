@@ -53,13 +53,11 @@
     <?php
         require_once('Connectsql.php');
 
-        $sql = "SELECT * FROM `movie_information` WHERE `name`=返校";
-        $stmt = $conn->prepare($sql);
-        $stmt->execute();
-        $stmt->fetch();
-        if($stmt->fetch()){
-           echo '<p>返校</p>';
-       }
+        $sql = "SELECT 'time' FROM `movie_information` WHERE `name`=返校";
+//        $conn->query($sql);
+        $sql2 = "SELECT 'time' FROM `movie_information` WHERE id=1";
+        $conn->query($sql2);
+        
 
     ?>
 
