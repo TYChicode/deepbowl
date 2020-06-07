@@ -106,7 +106,7 @@
                                                 }
                                             }
                                             $mn = $row["name"];
-                                            echo '<img src=$mn . ".jpg" />';
+                                            echo 'src="../img/'.$mn.'.jpg" class="img-responsive center-block" alt="Cinque Terre" width="256" height="192"';
                                             
 
                                         ?>
