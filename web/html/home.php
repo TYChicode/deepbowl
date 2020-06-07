@@ -94,7 +94,21 @@
                                 </td>
                                 <td>
                                     <a href="../html/movie_introduce/偷窺.php" style="text-decoration:none;color: black;">
-                                        <img src="../img/偷窺.jpg" class="img-responsive center-block" alt="Cinque Terre" width="256" height="192">
+                                        <?php
+                                            require_once('Connectsql.php');
+                                            $sql = "SELECT *  FROM `movie_information` WHERE `id` = 1";
+                                            $result = $conn->query($sql);
+                                            if ($result->num_rows > 0) { // 大於零代表有這個資料。
+                                                while ($row = $result->fetch_assoc()) {
+                                                    echo $row["name"];
+                                                }
+                                            }
+                                            $mn = $row["name"];
+                                            echo '<img src=$mn . ".jpg" />';
+                                            
+
+                                        ?>
+                                        <!--<img src="../img/偷窺.jpg" class="img-responsive center-block" alt="Cinque Terre" width="256" height="192">-->
                                         <h3>偷窺</h3>
                                     </a>
                                 </td>
