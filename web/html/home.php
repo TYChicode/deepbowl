@@ -34,7 +34,9 @@
 
 <body style="font-family: Microsoft JhengHei; font-size: 17px;">
     <?php
-        require_once('Connectsql.php');
+        if (@$_COOKIE["logined"]!=1){
+            setcookie("logined","0");
+        }
     ?>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="../html/Home.php" style="font-size: 25px;">電影院訂票系統</a>
