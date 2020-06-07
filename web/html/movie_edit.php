@@ -84,10 +84,10 @@
                                             <div class="col">
                                                 <label for="sel1">日期</label>
                                                 <select class="form-control" id="sel1">
-                                        <option>達悟族-豐年祭</option>
-                                        <option>賽夏族-矮靈祭</option>
-                                        <option>卑南族-猴祭</option>
-                                        <option>布農族-射耳祭</option>
+                                        <option></option>
+                                        <option></option>
+                                        <option></option>
+                                        <option></option>
                                       </select>
                                             </div>
                                         </div>
@@ -95,10 +95,10 @@
                                             <div class="col">
                                                 <label for="sel1">影城</label>
                                                 <select class="form-control" id="sel2">
-                                        <option>達悟族-豐年祭</option>
-                                        <option>賽夏族-矮靈祭</option>
-                                        <option>卑南族-猴祭</option>
-                                        <option>布農族-射耳祭</option>
+                                        <option></option>
+                                        <option></option>
+                                        <option></option>
+                                        <option></option>
                                       </select>
                                             </div>
                                         </div>
@@ -114,10 +114,10 @@
                                             <div class="col ">
                                                 <label for="sel1 ">影城</label>
                                                 <select class="form-control " id="sel3">
-                                        <option>達悟族-豐年祭</option>
-                                        <option>賽夏族-矮靈祭</option>
-                                        <option>卑南族-猴祭</option>
-                                        <option>布農族-射耳祭</option>
+                                        <option></option>
+                                        <option></option>
+                                        <option></option>
+                                        <option></option>
                                       </select>
                                             </div>
                                         </div>
