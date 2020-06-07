@@ -70,6 +70,24 @@
                             <tr>
                                 <td>
                                     <a href="../html/movie_introduce/久美子的奇異旅程.php" style="text-decoration:none;color: black;">
+                                        <?php
+                                            require_once('Connectsql.php');
+//                                            $sql = "SELECT 'picture' FROM `movie_information` WHERE name=久美子的奇異旅程";
+/*                                            $sql = "SELECT *  FROM `movie_information` WHERE `id` = 2";
+                                            $result = $conn->query($sql);
+                                            if ($result->num_rows > 0) { // 大於零代表有這個資料。
+                                                while ($row = $result->fetch_assoc()) {
+                                                    echo $row["name"];
+                                                }
+                                            }*/
+                                            $sql = "SELECT *  FROM `movie_information` WHERE `id` = 2";
+                                            $result = $conn->query($sql);
+                                            if ($result->num_rows > 0) { // 大於零代表有這個資料。
+                                                while ($row = $result->fetch_assoc()) {
+                                                    echo $row["picture"];
+                                                }
+                                            }
+                                        ?>
                                         <img src="../img/久美子的奇異旅程.jpg" class="img-responsive center-block" alt="Cinque Terre" width="256" height="192">
                                         <h3>久美子的奇異旅程</h3>
                                     </a>
