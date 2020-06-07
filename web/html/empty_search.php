@@ -118,20 +118,8 @@
                                             </div>
                                         </div>
                                         <h5>影廳 : </h5>
+                                        <h5>總座位數 : </h5>
                                         <h5>剩餘座位 : </h5>
-                                        <h5>—————————</h5>
-                                        <div class="form-group">
-                                            <div class="col">
-                                                <label for="sel1">訂購張數</label>
-                                                <select class="form-control" id="sel5">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                      </select>
-                                            </div>
-                                        </div>
-                                        <h5>未選張數 : </h5>
                                         <div class="col">
                                             <button type="submit" class="btn btn-primary">清除</button>
                                             <button type="submit" class="btn btn-primary">送出</button>
