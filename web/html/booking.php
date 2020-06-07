@@ -80,6 +80,7 @@
                                     </a>
                                 </td>
                                 <td>
+                                <form action="booking.php" method="post">
                                     <a style="text-decoration:none;color: black;">
                                         <div class="form-group">
                                             <div class="col">
@@ -88,44 +89,19 @@
                                                     <?php
                                                         require_once('Connectsql.php');
 
-                                                        $q = isset($_GET['q'])? htmlspecialchars($_GET['q']) : '';
-
                                                         $email = $_COOKIE["email"];
                                                         $sql = "SELECT `id` FROM `customer_information` WHERE `email` LIKE '$email'";
                                                         $result = $conn->query($sql);
                                                         $row = $result->fetch_assoc();
-
-                                                        $id = $row["id"];
-                                                        
-                                                        
                                                         $sql = "SELECT *  FROM `order_information` WHERE `customer_id`='$id'";
                                                         $result = $conn->query($sql);
-                                                    ?>
-                                                    <form action="" method="get">
-                                                        <select name="q">
-                                                        <option value="">電影:</option>
-                                                        <option value="RUNOOB">Runoob</option>
-                                                        <option value="GOOGLE">Google</option>
-                                                        <option value="TAOBAO">Taobao</option>
-                                                        </select>
-                                                    　
-                                                    </form>
 
-                                        <option></option>
-                                        <option></option>
-                                        <option></option>
-                                        <option></option>
-                                      </select>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col">
-                                                <label for="sel1">日期</label>
-                                                <select class="form-control" id="sel2">
-                                        <option></option>
-                                        <option></option>
-                                        <option></option>
-                                        <option></option>
+                                                    ?>
+
+                                        <option>久美子的奇異旅程</option>
+                                        <option>冰雪奇緣</option>
+                                        <option>安眠醫生</option>
+                                        <option>尖峰人生暫停一下</option>
                                       </select>
                                             </div>
                                         </div>
@@ -172,6 +148,7 @@
                                         </div>
 
                                     </a>
+                                    </form>
                                 </td>
                             </tr>
                         </tbody>
