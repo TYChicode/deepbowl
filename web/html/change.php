@@ -47,7 +47,7 @@
             </ul>
         </div>
     </nav>
-    
+
     <section>
         <div class="container">
             <div class="row">
@@ -109,7 +109,14 @@
                     </td>
                     <td>
                         <div class="col">
-                            <button type="submit" class="btn btn-primary">換票</button>
+                            <button onclick="refund()" type="submit" class="btn btn-primary">換票</button>
+                            <!--call Refund php-->
+                            <script>
+                                function refund() {
+                                    window.location ='';
+                                }
+                            </script>
+
                             <br><button type="submit" class="btn btn-primary">退票</button>
                         </div>
                     </td>
