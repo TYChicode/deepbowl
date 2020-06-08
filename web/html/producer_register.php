@@ -7,6 +7,7 @@
     $password = $_POST['password'];
     $pw = $_POST['pw'];
 
+    if ($password===$pw){
     $sql = "SELECT `email` FROM `account_information` WHERE `email`='$email'";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) { // 大於零代表有這個資料。
@@ -24,6 +25,10 @@
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
+    }
+    else {
+        echo("<script>alert('請確定資訊填寫正確')</script>");
+        echo("<script>window.location = 'SignUp.php';</script>");
     }
     mysqli_close($conn);
 ?>
