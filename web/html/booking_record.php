@@ -76,33 +76,38 @@
 
                     $id = $row["id"];
                     $sql = "SELECT *  FROM `order_information` WHERE `customer_id`='$id'";
-                    $result = $conn->query($sql);
-                    $row = $result->fetch_assoc();
-                    $fare = @$row["fare"];
-                    $time = @$row["time"];
-                    $seat = @$row["seat_id"];
-                    $session = @$row["session"];
-                    
-                    $sql = "SELECT `name` FROM `deepbowl`.`cinema_information` WHERE `id` = ".@$row["cinema_id"];
-                    $result = $conn->query($sql);
-                    $row1 = @$result->fetch_assoc();
-                    $cinema = $row1["name"];
+                    if ($result->num_rows > 0) { // 大於零代表有這個資料。
+                        $result = $conn->query($sql);
+                        $row = $result->fetch_assoc();
+                        $fare = $row["fare"];
+                        $time = $row["time"];
+                        $seat = $row["seat_id"];
+                        $session = $row["session"];
 
-                    $sql = "SELECT `name` FROM `deepbowl`.`theater_information` WHERE `id` = ".$row["theater_id"];
-                    $result = $conn->query($sql);
-                    $row2 = $result->fetch_assoc();
-                    $theater = $row2["name"];
+                        $sql = "SELECT `name` FROM `deepbowl`.`cinema_information` WHERE `id` = " . $row["cinema_id"];
+                        $result = $conn->query($sql);
+                        $row1 = $result->fetch_assoc();
+                        $cinema = $row1["name"];
 
-                    echo '<td>';
-                    echo '<a>交易序號 : ' . $row["id"] . '</a>';
-                    echo '<br>影城 : ' . $theater;
-                    echo '<br>金額 : ' . $fare;
-                    echo '</td>';
-                    echo '<td>';
-                    echo '<a>交易時間 : ' . $time . '</a>';
-                    echo '<br>座位 : ' . $cinema . ' - ' . $seat;
-                    echo '<br>場次 : ' . $session;
-                    echo '</td>';
+                        $sql = "SELECT `name` FROM `deepbowl`.`theater_information` WHERE `id` = " . $row["theater_id"];
+                        $result = $conn->query($sql);
+                        $row2 = $result->fetch_assoc();
+                        $theater = $row2["name"];
+
+                        echo '<td>';
+                        echo '<a>交易序號 : ' . $row["id"] . '</a>';
+                        echo '<br>影城 : ' . $theater;
+                        echo '<br>金額 : ' . $fare;
+                        echo '</td>';
+                        echo '<td>';
+                        echo '<a>交易時間 : ' . $time . '</a>';
+                        echo '<br>座位 : ' . $cinema . ' - ' . $seat;
+                        echo '<br>場次 : ' . $session;
+                        echo '</td>';
+                    } else {
+                        echo ("<script>alert('查無訂票紀錄')</script>");
+                        echo ("<script>window.location = 'home.php';</script>");
+                    }
 
                     mysqli_close($conn);
                     ?>
