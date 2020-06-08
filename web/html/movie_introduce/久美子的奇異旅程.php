@@ -15,15 +15,6 @@
     <script src="../js/coremain.js"></script>
     <script src="../js/daygridmain.js"></script>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var calendarEl = document.getElementById('calendar');
-            var calendar = new FullCalendar.Calendar(calendarEl, {
-                plugins: ['dayGrid']
-            });
-            calendar.render();
-        });
-    </script>
 </head>
 
 <style>
