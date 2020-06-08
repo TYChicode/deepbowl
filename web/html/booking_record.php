@@ -85,7 +85,7 @@
                     
                     $sql = "SELECT `name` FROM `deepbowl`.`cinema_information` WHERE `id` = ".@$row["cinema_id"];
                     $result = $conn->query($sql);
-                    @$row1 = $result->fetch_assoc();
+                    $row1 = @$result->fetch_assoc();
                     $cinema = $row1["name"];
 
                     $sql = "SELECT `name` FROM `deepbowl`.`theater_information` WHERE `id` = ".$row["theater_id"];
