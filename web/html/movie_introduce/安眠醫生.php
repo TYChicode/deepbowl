@@ -88,7 +88,6 @@
                     <h5>‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</h5>
                     <iframe width="900" height="506" src="https://www.youtube.com/embed/XH9kxAUMBc4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div>
-                        <a>文字簡介</a>
                         <a>《安眠醫生》（英語：Doctor Sleep，中國大陸譯《睡夢醫生》，香港、新加坡譯《安眠醫生》）是一部於2019年上映的美國精神奇幻心理恐怖電影，改編自史蒂芬·金的2013年同名小說，該書是他1977年小說《鬼店》的續集，《鬼店》於1980年被改編成由史丹利·庫柏力克執導的同名電影。《安眠醫生》由麥可·弗拉納根編劇、執導和剪輯。主演是伊旺·麥奎格，他要飾演丹尼·托倫斯，是一名具有超自然能力而且在童年時期有創傷的男子。其他配角包括蕾貝卡·弗格森、凱莉·卡倫（Kyliegh Curran，她第一次演出的電影）和克利夫·柯蒂斯。</a>
                     </div>
                 </div>

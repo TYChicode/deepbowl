@@ -88,7 +88,6 @@
                     <h5>‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</h5>
                     <iframe width="900" height="506" src="https://www.youtube.com/embed/sYVtJXjis1Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div>
-                        <a>文字簡介</a>
                         <a>《尖峰人生暫停一下》（A man in a hurry）改編自法國標緻雪鐵龍（PSA）集團前任CEO克里斯蒂安斯泰夫（Christian Streiff）真人真事。
 
                             描述嚴苛的工作狂總裁在辦公室午睡醒來後，竟意外中風，語言能力與記憶力皆因此受損，並遭公司無預警解雇，經歷漫長的復健，他不僅重拾家庭生活、50天走完1500公里的朝聖之路，也對人生多了一份從容，而如今的他又重返商場，擔任全球前三大航太集團──賽峰（Safran S.A.）企業監理會副主席。

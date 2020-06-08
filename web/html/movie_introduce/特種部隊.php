@@ -88,7 +88,6 @@
                     <h5>‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</h5>
                     <iframe width="1045" height="444" src="https://www.youtube.com/embed/8nnx_QDZVLY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div>
-                        <a>文字簡介</a>
                         <a>特種部隊：眼鏡蛇的崛起》（英語：G.I. Joe: The Rise of Cobra）是一部於2009年上映的美國科幻動作電影，改編同名漫畫及1980年代動畫《大英雄》，由史蒂芬·桑莫斯（Stephen Sommers）執導。描述一群美國特種部隊，為阻止邪惡組織統治全世界的陰謀，上天下地運用最新科技和設備，對付神秘組織「眼鏡蛇」，免於世界陷入混亂。丹尼斯·奎德飾演特種部隊的指揮官，主角為查寧·塔圖飾演公爵，曾熟識反派眼鏡蛇的男爵夫人，由席艾娜·米勒飾演，韓國男星李炳憲詮釋眼鏡蛇組織的白幽靈。</a>
                     </div>
                 </div>

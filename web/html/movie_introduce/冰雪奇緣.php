@@ -88,7 +88,6 @@
                     <h5>‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</h5>
                     <iframe width="1045" height="466" src="https://www.youtube.com/embed/8U8LOzhNGr8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div>
-                        <a>文字簡介</a>
                         <a>《冰雪奇緣》（英語：Frozen）是一部2013年以電腦動畫技術製成的音樂奇幻喜劇3D電影，迪士尼動畫製作迪士尼電影公司發行的第53部迪士尼經典動畫長片，改編自安徒生童話的《冰雪女王》。電影敘述一位勇敢的公主，在一個採冰人和他忠誠的馴鹿以及一個有生命的雪人的陪伴下，踏上旅程去尋找她的姊姊，一名擁有冰雪魔法卻意外的冰封了整個王國的女王。</a>
                     </div>
                 </div>

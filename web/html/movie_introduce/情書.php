@@ -88,7 +88,6 @@
                     <h5>‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</h5>
                     <iframe width="900" height="506" src="https://www.youtube.com/embed/Oz0xs45dweg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div>
-                        <a>文字簡介</a>
                         <a>《情書》（英語：Love Letter），乃日本「映像作家」岩井俊二所導演的經典電影，還包括以下不同英文名稱的版本：When I Close My Eyes、Letters of Love、A Winter Love Story等。
 
                             電影敘述著一封原本出於哀思而寄往天國的情書，卻大出意料收到同名同姓的回信，並且逐漸挖掘出一段深埋多年卻始終沉靜的純真單戀，真相大白之後前塵往事與今時愛戀纏繞出了一段痴情悽美的摯愛情深。《情書》的靈感來自一部黑白作品，鈴木清順1959年的同名短片《Love Letter》[1]。
