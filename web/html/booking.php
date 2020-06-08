@@ -49,7 +49,6 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item"> <a class="nav-link" href="../html/home.php">電影介紹<span
                     class="sr-only">(current)</span></a> </li>
-                <li class="nav-item"> <a class="nav-link" href="">空位查詢</a> </li>
                 <li class="nav-item active"> <a class="nav-link" href="../html/booking.php">線上訂票</a> </li>
                 <li class="nav-item"> <a class="nav-link" href="../html/change.php">退換票</a> </li>
                 <li class="nav-item"> <a class="nav-link" href="../html/booking_record.php">查詢訂票紀錄</a> </li>
@@ -93,9 +92,8 @@
                                                         $sql = "SELECT `id` FROM `customer_information` WHERE `email` LIKE '$email'";
                                                         $result = $conn->query($sql);
                                                         $row = $result->fetch_assoc();
-                                                        $sql = "SELECT *  FROM `order_information` WHERE `customer_id`='$id'";
-                                                        $result = $conn->query($sql);
-
+                                                        //$sql = "SELECT *  FROM `order_information` WHERE `customer_id`='$id'";
+                                                        //$result = $conn->query($sql);
                                                     ?>
 
                                         <option>久美子的奇異旅程</option>
@@ -109,21 +107,21 @@
                                             <div class="col">
                                                 <label for="sel1">影城</label>
                                                 <select class="form-control" id="sel3">
-                                        <option></option>
-                                        <option></option>
-                                        <option></option>
-                                        <option></option>
+                                        <option>白日夢影城</option>
+                                        <option>向日葵影城</option>
+                                        <option>太陽花影城</option>
+                                        <option>作夢影城</option>
                                       </select>
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <div class="col">
-                                                <label for="sel1">場次</label>
+                                                <label for="sel1">日期與場次</label>
                                                 <select class="form-control" id="sel4">
-                                        <option></option>
-                                        <option></option>
-                                        <option></option>
-                                        <option></option>
+                                        <option>2020-06-09</option>
+                                        <option>2020-06-10</option>
+                                        <option>2020-06-11</option>
+                                        <option>2020-06-12</option>
                                       </select>
                                             </div>
                                         </div>
