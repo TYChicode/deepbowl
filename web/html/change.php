@@ -47,7 +47,7 @@
             </ul>
         </div>
     </nav>
-    
+
     <section>
         <div class="container">
             <div class="row">
@@ -81,6 +81,7 @@
                         $fare = $row["fare"];
                         $time = $row["time"];
                         $seat = $row["seat_id"];
+                        $session = $row["session"];
 
                         $sql = "SELECT `name` FROM `deepbowl`.`cinema_information` WHERE `id` = " . $row["cinema_id"];
                         $result = $conn->query($sql);
@@ -100,8 +101,7 @@
                         echo '<td>';
                         echo '<a>交易時間 : ' . $time . '</a>';
                         echo '<br>座位 : ' . $cinema . ' - ' . $seat;
-                        echo '<br>日期 : ';
-                        echo '<br>場次 : ';
+                        echo '<br>場次 : ' . $session;
                         echo '</td>';
 
                         mysqli_close($conn);
@@ -109,7 +109,14 @@
                     </td>
                     <td>
                         <div class="col">
-                            <button type="submit" class="btn btn-primary">換票</button>
+                            <button onclick="refund()" type="submit" class="btn btn-primary">換票</button>
+                            <!--call Refund php-->
+                            <script>
+                                function refund() {
+                                    window.location ='';
+                                }
+                            </script>
+
                             <br><button type="submit" class="btn btn-primary">退票</button>
                         </div>
                     </td>
