@@ -77,6 +77,7 @@
                         $id = $row["id"];
                         $sql = "SELECT *  FROM `order_information` WHERE `customer_id`='$id'";
                         $result = $conn->query($sql);
+                        if ($result->num_rows > 0) { // 大於零代表有這個資料。
                         $row = $result->fetch_assoc();
                         $fare = $row["fare"];
                         $time = $row["time"];
@@ -103,6 +104,10 @@
                         echo '<br>座位 : ' . $cinema . ' - ' . $seat;
                         echo '<br>場次 : ' . $session;
                         echo '</td>';
+                    } else {
+                        echo ("<script>alert('查無訂票紀錄')</script>");
+                        echo ("<script>window.location = 'home.php';</script>");
+                    }
 
                         mysqli_close($conn);
                         ?>
@@ -110,7 +115,7 @@
                     <td>
                         <div class="col">
                             <button onclick="refund()" type="submit" class="btn btn-primary">換票</button>
-                            
+
                             <br><button onclick="refund()" type="submit" class="btn btn-primary">退票</button>
                             <!--call Refund php-->
                             <script>
