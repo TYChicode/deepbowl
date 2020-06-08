@@ -10,6 +10,8 @@
     if ($conn->query($sql) === TRUE) {
         echo("<script>alert('刪除完成')</script>");
         echo("<script>window.location = 'SingUp.php';</script>");
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
     }
 
     mysqli_close($conn);
