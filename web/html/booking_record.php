@@ -78,14 +78,14 @@
                     $sql = "SELECT *  FROM `order_information` WHERE `customer_id`='$id'";
                     $result = $conn->query($sql);
                     $row = $result->fetch_assoc();
-                    $fare = $row["fare"];
-                    $time = $row["time"];
-                    $seat = $row["seat_id"];
-                    $session = $row["session"];
+                    $fare = @$row["fare"];
+                    $time = @$row["time"];
+                    $seat = @$row["seat_id"];
+                    $session = @$row["session"];
                     
-                    $sql = "SELECT `name` FROM `deepbowl`.`cinema_information` WHERE `id` = ".$row["cinema_id"];
+                    $sql = "SELECT `name` FROM `deepbowl`.`cinema_information` WHERE `id` = ".@$row["cinema_id"];
                     $result = $conn->query($sql);
-                    $row1 = $result->fetch_assoc();
+                    @$row1 = $result->fetch_assoc();
                     $cinema = $row1["name"];
 
                     $sql = "SELECT `name` FROM `deepbowl`.`theater_information` WHERE `id` = ".$row["theater_id"];
