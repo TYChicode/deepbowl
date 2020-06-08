@@ -76,8 +76,8 @@
 
                     $id = $row["id"];
                     $sql = "SELECT *  FROM `order_information` WHERE `customer_id`='$id'";
+                    $result = $conn->query($sql);
                     if ($result->num_rows > 0) { // 大於零代表有這個資料。
-                        $result = $conn->query($sql);
                         $row = $result->fetch_assoc();
                         $fare = $row["fare"];
                         $time = $row["time"];
