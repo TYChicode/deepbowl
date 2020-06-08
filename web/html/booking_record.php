@@ -48,25 +48,7 @@
             </ul>
         </div>
     </nav>
-    <header>
-        <div id="demo" class="carousel slide" data-ride="carousel" style="width: 600px; margin: auto;">
 
-            <!-- Indicators -->
-            <ul class="carousel-indicators">
-                <li data-target="#demo" data-slide-to="0" class="active"></li>
-                <li data-target="#demo" data-slide-to="1"></li>
-                <li data-target="#demo" data-slide-to="2"></li>
-            </ul>
-
-            <!-- Left and right controls -->
-            <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#demo" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
-        </div>
-    </header>
     <section>
         <div class="container">
             <div class="row">
@@ -99,6 +81,7 @@
                     $fare = $row["fare"];
                     $time = $row["time"];
                     $seat = $row["seat_id"];
+                    $session = $row["session"];
                     
                     $sql = "SELECT `name` FROM `deepbowl`.`cinema_information` WHERE `id` = ".$row["cinema_id"];
                     $result = $conn->query($sql);
@@ -118,8 +101,7 @@
                     echo '<td>';
                     echo '<a>交易時間 : ' . $time . '</a>';
                     echo '<br>座位 : ' . $cinema . ' - ' . $seat;
-                    echo '<br>日期 : ';
-                    echo '<br>場次 : ';
+                    echo '<br>場次 : ' . $session;
                     echo '</td>';
 
                     mysqli_close($conn);
