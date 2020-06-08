@@ -113,7 +113,7 @@
                             <!--call Refund php-->
                             <script>
                                 function refund() {
-                                    window.location ='';
+                                    window.location ='refund.php';
                                 }
                             </script>
 
