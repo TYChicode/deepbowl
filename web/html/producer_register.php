@@ -29,7 +29,7 @@
     }
     else {
         echo("<script>alert('請確定資訊填寫正確')</script>");
-        echo("<script>window.location = 'SignUp.php';</script>");
+        echo("<script>window.location = 'SingUp.php';</script>");
     }
     mysqli_close($conn);
 ?>
