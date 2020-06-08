@@ -6,10 +6,10 @@
     $row = $result->fetch_assoc();
     $id = $row["id"];
 
-    $sql = "DELETE *  FROM `order_information` WHERE `customer_id`='$id'";
+    $sql = "DELETE FROM `order_information` WHERE `order_information`.`customer_id` = '$id';";
     if ($conn->query($sql) === TRUE) {
         echo("<script>alert('刪除完成')</script>");
-        echo("<script>window.location = 'SingUp.php';</script>");
+        echo("<script>window.location = 'change.php';</script>");
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
