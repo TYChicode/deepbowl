@@ -110,14 +110,14 @@
                     <td>
                         <div class="col">
                             <button onclick="refund()" type="submit" class="btn btn-primary">換票</button>
+                            
+                            <br><button onclick="refund()" type="submit" class="btn btn-primary">退票</button>
                             <!--call Refund php-->
                             <script>
                                 function refund() {
                                     window.location ='refund.php';
                                 }
                             </script>
-
-                            <br><button type="submit" class="btn btn-primary">退票</button>
                         </div>
                     </td>
                 </tr>
