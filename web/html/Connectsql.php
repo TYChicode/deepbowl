@@ -1,6 +1,6 @@
 <?php
     //連結資料庫
-    $servername = "36.233.2.146";
+    $servername = "36.234.7.170";
     $username = "open";
     $password = "0000";
     $dbname = "deepbowl";
